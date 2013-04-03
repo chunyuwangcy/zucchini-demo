@@ -13,5 +13,5 @@ class BooksScreen extends Screen
       view.tableViews()[0].scrollToElementWithName(elementName)
       
     'Delete a row "([^"]*)"$': (rowName) ->
-      view.tableViews()[0].cells()[rowName].switches()[0].setValue(true);
-      view.tableViews()[0].cells()[rowName].buttons()[0].tap();
+      view.tableViews()[0].cells()[rowName].switches()[0].tap()
+      view.tableViews()[0].cells()[rowName].buttons()[0].tap()
