@@ -1,17 +1,15 @@
 class BooksScreen extends Screen
-  anchor: -> view.navigationBars()["Books"]
-  
+  anchor: -> $("navigationBar[name=Authors]")
+
   constructor: ->
     super 'books'
-    
-    extend @elements,
-    'Edit' : -> view.navigationBars()[0].buttons()["Edit"],
-    'Add'  : -> view.navigationBars()[0].buttons()["Add"]
-    
+
     extend @actions,
     'Scroll to "([^"]*)"$': (elementName) ->
       view.tableViews()[0].scrollToElementWithName(elementName)
-      
+
     'Delete a row "([^"]*)"$': (rowName) ->
+      target.pushTimeout(0.5)
       view.tableViews()[0].cells()[rowName].switches()[0].tap()
       view.tableViews()[0].cells()[rowName].buttons()[0].tap()
+      target.popTimeout()

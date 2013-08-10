@@ -1,31 +1,33 @@
 Start on the "Books" screen:
- 	Take a screenshot
-	Tap "Add"
+  Take a screenshot
+  Tap "Add"
 
 Then on the "New Book" screen:
-	Take a screenshot
-	Tap "Title"
-	
+  Take a screenshot
+  Tap "Title"
+
 Then on the "Book Title" screen:
-	Type "Testing with Zucchini"
-	Take a screenshot
-	Confirm "Save"
+  Clear the "Title" field
+  Type "Testing with Zucchini" in the "Title" field
+  Take a screenshot
+  Confirm "Save"
 
 Then on the "New Book" screen:
-	Tap "Author"
+  Tap "Author"
 
 Then on the "Author" screen:
-	Type "Vasily M. and Raj K."
-	Take a screenshot
-	Confirm "Save"
+  Clear the "Author" field
+  Type "Vasily M and Raj K" in the "Author" field
+  Take a screenshot
+  Confirm "Save"
 
 Then on the "New Book" screen:
-	Take a screenshot named "new-book-filled"
-	Confirm "Save"
-	
+  Take a screenshot named "new-book-filled"
+  Confirm "Save"
+
 Then on the "Books" screen:
-	Scroll to "Testing with Zucchini"
-	Take a screenshot named "books-with-a-new"
-	Tap "Edit"
-	Delete a row "Testing with Zucchini"
-	
+  Scroll to "Testing with Zucchini"
+  Take a screenshot named "books-with-a-new"
+  Tap "Edit"
+  Delete a row "Testing with Zucchini"
+
