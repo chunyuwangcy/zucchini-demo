@@ -1,23 +1,44 @@
-This is a demo project of Zucchini iOS visual testing framework.
+# Zucchini demo project
+This project features a working example of a Zucchini feature, screenshot assertions, custom step definitions and more complex cases of screen elements lookup.
 
-## Running the demo on your device
+## Requirements
+* [Zucchini](https://github.com/zucchini-src/zucchini#requirements)
+* Apple's sample [CoreDataBooks](http://developer.apple.com/library/ios/samplecode/CoreDataBooks/CoreDataBooks.zip) application
+
+## Running on your device
  
-  1. Download and compile Apple's sample [CoreDataBooks](http://developer.apple.com/library/ios/samplecode/CoreDataBooks/CoreDataBooks.zip) application onto your device.
-  2. Add your device to features/support/config.yml. You can use the [udidetect](https://github.com/vaskas/udidetect) tool (`udidetect -z`) to grab the UDID. 
-  3. Run it with `ZUCCHINI_DEVICE='<Your device name>' zucchini run zucchini-demo/features/`.
+1. Compile the CoreDataBooks application onto your device.
+2. Add your device to `features/support/config.yml`.  
+You can use the [udidetect](https://github.com/vaskas/udidetect) tool with `udidetect -z` to extract the UDID. 
 
-## Running the demo on the simulator
+Run the features with:
 
-  1. Download and compile Apple's sample [CoreDataBooks](http://developer.apple.com/library/ios/samplecode/CoreDataBooks/CoreDataBooks.zip) application onto your device.
-  2. Find where the app has been build to.  To do this, in XCode, go to preferences -> locations -> on the derived data, click the small arrow -> go to derived data folder -> go to coredatabooks.... folder -> Build -> products -> Debug-iphonesimulator -> right click on CoreDataBooks and show contents -> then highlight any file and press command+i -> then copy the whole path (after 'where').
-  3. In the zucchini demo project, edit features/support/config.yml and paste the path after where it says 'app'.  Below you can see an example of what your config file should look like.
-  4. Now go to the zucchini demo project and run the following command: `ZUCCHINI_DEVICE="iOS Simulator" zucchini run features`
-  5. If you run into problems make sure you have coffee-script and imagemagick installed
+```
+ZUCCHINI_DEVICE='Your device name' zucchini run features/
+```
 
-```yaml
+## Running on the iOS Simulator
+
+1. Compile the CoreDataBooks application onto the Simulator.
+2. Find where the app has been build to (steps [one](http://www.zucchiniframework.org/i/demo/1_xcode_location.png), [two](http://www.zucchiniframework.org/i/demo/2_derived_data.png), [three](http://www.zucchiniframework.org/i/demo/3_copy_path.png)).
+3. Edit `features/support/config.yml` and paste the path under `app:`, followed by `CoreDataBooks.app`, e.g.
+
+```
 app: /Users/Your-Name/Library/Developer/Xcode/DerivedData/CoreDataBooks-some-long-string/Build/Products/Debug-iphonesimulator/CoreDataBooks.app
 
 devices:
- iOS Simulator:
-  screen: retina_ios5
- ``` 
+  iOS Simulator:
+    screen: retina_ios6 
+  ...
+ ```
+ 
+Run the features with:
+
+```
+zucchini run features/
+```
+
+## See also
+
+* [Using Zucchini](https://github.com/zucchini-src/zucchini/wiki/Usage)
+* [Automated iOS testing with Zucchini](http://www.jacopretorius.net/2013/04/automated-ios-testing-with-zucchini.html)
