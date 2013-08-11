@@ -1,4 +1,5 @@
 #app: /Users/example/Library/Developer/Xcode/DerivedData/CoreDataBooks-ebscrjfhxtkvdfcmtuwluoitjjwo/Build/Products/Debug-iphonesimulator/CoreDataBooks.app
+app: CoreDataBooks.app
 
 devices:
   Simulator:
@@ -6,6 +7,6 @@ devices:
     default: true
     simulator: iPhone (Retina 3.5-inch)
 
-  iPhone 4:
+  iPhone:
     UDID  : hey88thisdisc6efjust22097ac0sampled2udid
-    screen: retina_ios5
+    screen: retina_ios6
