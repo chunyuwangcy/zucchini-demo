@@ -40,5 +40,5 @@ zucchini run features/
 
 ## See also
 
-* [Zucchini features anatomy](https://github.com/zucchini-src/zucchini/wiki/Zucchini-features-anatomy)
+* [Zucchini features on the inside](https://github.com/zucchini-src/zucchini/wiki/Features-on-the-inside)
 * [Automated iOS Testing with Zucchini](http://www.jacopretorius.net/2013/04/automated-ios-testing-with-zucchini.html) - a friendly tutorial by [@Jaco-Pretorius](https://github.com/Jaco-Pretorius)
